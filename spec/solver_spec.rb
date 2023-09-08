@@ -18,4 +18,16 @@ describe Solver do
       expect { solver.factorial(-999) }.to raise_error(ArgumentError)
     end
   end
+
+  describe 'Reverse string Test' do
+    it 'should return reverse of the given argument' do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+    it 'should return reverse of the given argument' do
+      expect(solver.reverse('Word')).to eq('drow')
+    end
+    it 'should return reverse of the given argument' do
+      expect(solver.reverse('THrOW')).to eq('worht')
+    end
+  end
 end
