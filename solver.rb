@@ -9,8 +9,8 @@ class Solver
     end
   end
 
-  def reverse(str)
-    @reverse_str = str.reverse.downcase
+  def reverse(word)
+    @reverse_str = word.reverse.downcase
   end
 
   def fizzbuzz(num)
